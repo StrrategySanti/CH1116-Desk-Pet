@@ -7,7 +7,6 @@ U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(
   U8X8_PIN_NONE
 );
 
-
 const int leftTouch = 27;
 const int middleTouch = 26;
 const int rightTouch = 25;
@@ -21,7 +20,6 @@ void setup() {
 
   Wire.begin(21, 22);
   u8g2.begin();
-  
   
   pinMode(leftTouch, INPUT);
   pinMode(middleTouch, INPUT);
@@ -41,10 +39,6 @@ void loop() {
   
   delay(100);
 
-}
-
-void runGame() {
-  
 }
 
 void pageSelect() {
@@ -88,10 +82,6 @@ void pageSelect() {
     }
   }
 }
-
-/*
-Book 1 cointains page values 1-6
-*/
 
 void drawPage() {
   switch (book) {
