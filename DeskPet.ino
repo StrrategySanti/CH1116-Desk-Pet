@@ -128,26 +128,3 @@ void drawPage() {
     u8g2.sendBuffer();
   }
 }
-
-// condition for drawPage() to check if the previous page and book are the same, do not clear the display and write the same image again.
-// ideally this would save on current draw
-
-/*
-if ((page = lastPage) && (book = lastBook)) {
-  break:
-}
-if ((page != lastPage) || (book != lastBook)) {
-  drawPage()
-}
-*/
-
-
-
-//u8g2.clearBuffer();
-//u8g2.sendBuffer();
-
-//u8g2.drawStr( , ,"");
-//u8g2.drawHLine(3, 36, 47);
-//u8g2.drawVLine(45, 32, 12);
-
-//u8g2.setFontMode(1);	// Transparent
